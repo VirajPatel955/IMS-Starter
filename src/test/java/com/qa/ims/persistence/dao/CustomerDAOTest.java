@@ -23,31 +23,31 @@ public class CustomerDAOTest {
 
 	@Test
 	public void testCreate() {
-		final Customer created = new Customer(2L, "chris", "perrins");
+		final Customer created = new Customer(2L, "chris", "perrins", "babylon close", "E20 8HG", "CP@QAAcademy.com");
 		assertEquals(created, DAO.create(created));
 	}
 
 	@Test
 	public void testReadAll() {
 		List<Customer> expected = new ArrayList<>();
-		expected.add(new Customer(1L, "jordan", "harrison"));
+		expected.add(new Customer(1L, "jordan", "harrison", "89 Hammerhill Road", "H56 9GE", "JH@QAAcademy.com"));
 		assertEquals(expected, DAO.readAll());
 	}
 
 	@Test
 	public void testReadLatest() {
-		assertEquals(new Customer(1L, "jordan", "harrison"), DAO.readLatest());
+		assertEquals(new Customer(1L, "jordan", "harrison", "89 Hammerhill Road", "H56 9GE", "JH@QAAcademy.com"), DAO.readLatest());
 	}
 
 	@Test
 	public void testRead() {
 		final long ID = 1L;
-		assertEquals(new Customer(ID, "jordan", "harrison"), DAO.read(ID));
+		assertEquals(new Customer(ID, "jordan", "harrison", "89 Hammerhill Road", "H56 9GE", "JH@QAAcademy.com"), DAO.read(ID));
 	}
 
 	@Test
 	public void testUpdate() {
-		final Customer updated = new Customer(1L, "chris", "perrins");
+		final Customer updated = new Customer(1L, "chris", "perrins", "babylon close", "E20 8HG", "CP@QAAcademy.com");
 		assertEquals(updated, DAO.update(updated));
 
 	}
