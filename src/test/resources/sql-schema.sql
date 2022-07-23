@@ -16,3 +16,13 @@ CREATE TABLE IF NOT EXISTS `customers` (
     `email` VARCHAR(40) DEFAULT NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE IF NOT EXISTS `items` (
+    `item_id` INT (11) NOT NULL AUTO_INCREMENT,
+    `item_title` VARCHAR(40) DEFAULT NULL,
+    `item_price` DECIMAL (6,2) DEFAULT NULL,
+    `quantity` INT (20) DEFAULT NULL,
+    `age_rating` INT (20) DEFAULT NULL,
+    PRIMARY KEY (`item_id`)
+ );
+ 

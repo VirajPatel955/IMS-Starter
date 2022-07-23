@@ -1,5 +1,6 @@
 package com.qa.ims.utils;
 
+
 import java.util.Scanner;
 
 import org.apache.logging.log4j.LogManager;
@@ -51,6 +52,37 @@ public class Utils {
 		} while (doubleInput == null);
 		return doubleInput;
 	}
+
+	public int getInt() {
+		String input = null;
+		Integer intInput = null;
+		do {
+			try {
+				input = getString();
+				intInput = Integer.parseInt(input);
+			} catch (NumberFormatException nfe) {
+				LOGGER.info("Error - Please enter a number");
+			}
+		} while (intInput == null);
+		return intInput;
+	}
+		
+	
+
+	/*public BigDecimal getBigDecimal() {
+	String input = null;
+	BigDecimal bigdecimalInput = null;
+	do { 
+		try {
+			input = getString();
+			bigdecimalInput = BigDecimal.parseBigDecimal(input);
+		} catch (NumberFormatException nfe) {
+			LOGGER.info("Error - Please enter a number" );
+			
+		}
+	}while (bigdecimalInput == null);
+		return bigdecimalInput;
+	}*/
 
 	
 }
