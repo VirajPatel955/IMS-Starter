@@ -22,3 +22,11 @@ CREATE TABLE IF NOT EXISTS `items` (
     `age_rating` INT (20) DEFAULT NULL,
     PRIMARY KEY (`item_id`)
  );
+ 
+ CREATE TABLE IF NOT EXISTS `orders` (
+ `order_id` INT (11) NOT NULL AUTO_INCREMENT,
+ `order_date` DATE DEFAULT NULL,
+ `fk_id` INT (11),
+ PRIMARY KEY (`order_id`),
+ FOREIGN KEY (`fk_id`) REFERENCES customers(`id`)
+ );
