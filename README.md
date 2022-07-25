@@ -1,7 +1,7 @@
 Coverage: 34%
-# Project Title
+# IMS Project
 
-One Paragraph of project description goes here
+Using what I have learned in the past weeks to product a fucntional Iventory Management System, 
 
 ## Getting Started
 
