@@ -5,60 +5,35 @@ Using what I have learned in the past weeks to product a fucntional Iventory Man
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Run the runner, input what you would liem to do on the system crustomer, order, item, orderitem
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Java Eclipse
+MySQL Workbench
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
 
 ```
-Give the example
+Install Java eclipse
 ```
 
-And repeat
+Install MYSQL Workbench
 
 ```
-until finished
-```
+include a connection between to establish the JBDC 
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
 
-Explain how to run the automated tests for this system. Break down into which tests and what they do
 
-### Unit Tests 
 
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### Integration Tests 
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -74,7 +49,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
+* **Viraj Patel** - *Initial work* - [VirajPatel955](https://github.com/VirajPatel955)
 
 ## License
 
