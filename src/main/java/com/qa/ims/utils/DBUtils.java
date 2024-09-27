@@ -22,6 +22,7 @@ public class DBUtils {
 	private final String dbUser;
 
 	private final String dbPassword;
+	
 
 	private DBUtils(String properties) {
 		Properties dbProps = new Properties();
@@ -33,6 +34,7 @@ public class DBUtils {
 		this.dbUrl = dbProps.getProperty("db.url", "");
 		this.dbUser = dbProps.getProperty("db.user", "");
 		this.dbPassword = dbProps.getProperty("db.password", "");
+		
 	}
 
 	public DBUtils() {
